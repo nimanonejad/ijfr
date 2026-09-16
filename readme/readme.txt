@@ -214,7 +214,8 @@ Step 1:
 Start MATLAB R2009b, follow the steps in the Section GENERAL INSTRUCTIONS.
 
 Open main_example.m in the folder "replication_of_submission" and run main_example.m.
-I have provided te output in the folder, wti_4.mat.
+This should provide 1 MATLAB.mat file, namely, wti_4. I have provided it in the 
+replication_of_submission folder. 
 
 Step 2:
 Open figure1_computation_example.m in the folder "replication_of_submission". 
