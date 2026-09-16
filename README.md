@@ -1,7 +1,7 @@
 # Replication Package for "A Beta-Binomial Algorithm for Forecasting the Price of Crude Oil"
 by Nima Nonejad
 
-This repository contains the data, MATLAB code, numerical reference results, and MATLAB figure files required to reproduce the results presented in the manuscript and supplementary material. The former contains 7 figures, the latter 1 table and 9 figures.
+This repository contains the data, MATLAB code, numerical reference results, and MATLAB figure files required to reproduce the results presented in the manuscript and supplementary material. 
 
 The replication code was developed using MATLAB R2009b with the Econometrics Toolbox. All datasets are publicly available and included in the data folder. User-written MATLAB functions are provided in the functions folder.
 
