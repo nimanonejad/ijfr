@@ -11,12 +11,13 @@ addpath('data')
 N=1; 
 LASTN=maxNumCompThreads(N);
 
+ih=2; %Forecast horizon h=2,3,4,9
 kk=1;
 vbeg=199001;
 vend=202412;  
 for k=1
    
-    eval(['load for_',int2str(k),'.mat']) 
+    eval(['load for_',int2str(ih),'.mat']) 
 
     dalpha=1;
     mml=combvec([5e-1,1e-1,1e-2,1e-3,1e-4,1e-5,1e-6,1e-10],1)';
