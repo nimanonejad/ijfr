@@ -129,10 +129,11 @@ entered into Excel before the final figure is produced. In these cases,
 the Excel file provides reference numerical results for checking the
 replication.
 
-The titles, labels, tick marks, and tick labels of some figures were
-adjusted manually after the numerical calculations were completed.
-These manual adjustments concern graphical presentation only and do not
-affect the underlying numerical results.
+The titles, labels, tick marks, tick labels, and axis limits of some
+figures were adjusted manually after numerical calculations completed.
+These differences concern presentation formatting across MATLAB versions
+(e.g., R2009b vs modern releases) and do not affect underlying numerical
+results or paper conclusions.
 
 
 =======================================================================
@@ -908,7 +909,7 @@ Start MATLAB R2009b, follow the steps in the Section GENERAL INSTRUCTIONS.
 
 Open main_prior.m in the folder "replication_of_supplementary_material". 
 
-Set dg=0.005 in line 14 and run main_prior.m. This should provide one
+Set dg=0.05 in line 14 and run main_prior.m. This should provide one
 MATLAB .mat file.
 
 Step 2:
@@ -926,7 +927,7 @@ Comment vend=202412; and uncomment vend=201912;. Run the script again.
 The output should correspond to row 1, columns B, D and F.
 
 Step 4:
-Repeat the procedure for dg=0.05, dg=5, dg=50, and dg=100. The resulting
+Repeat the procedure for dg=0.5, dg=5, dg=50, and dg=100. The resulting
 rows should correspond to the respective rows in the "figure7_supp"
 sheet.
 
@@ -982,6 +983,7 @@ MATLAB .mat file.
 
 Step 2:
 Open figure9_supp_computation.m in the folder "replication_of_supplementary_material". 
+Set ih=2 in line 14 (matching the forecast horizon set in main_for.m).
 Adjust the addpath so that it points to the folder containing the 
 MATLAB MAT file generated in Step 1. 
 

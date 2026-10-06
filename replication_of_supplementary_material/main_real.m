@@ -40,12 +40,12 @@ for i=1:size(mxc,2)
     end
 end
 
-vp=vyc(2:end,1);
+vp=vyc(2:end,1)./vpc(2:end,1);
 mplag=funcLag(vp,ip);
 mplag=mplag(ip+1:end,:);
 mplag=mplag(1:end-(ih-1),:);
 
-vy=diff(log(vyc(:,1)./vpc));
+vy=diff(log(vyc(:,1)));
 mylag=funcLag(vy,ip);
 mylag=mylag(ip+1:end,:);
 mylag=mylag(1:end-(ih-1),:);
@@ -89,8 +89,7 @@ end
 
 mpof(:,end)=0;
 meps(:,end)=cmodel{end,1}.vy.^2;
-%for k=[1,2,3,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19] %the part does the loop over all predictors, which takes time
-for k=4 %here, I have just sat k=4 so I can show you replication results using the fourth monitoring variable.
+for k=[1,2,3,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19]
     vh=mzc(:,k);
     vh=vh(size(vh,1)-size(meps,1)+1:end,:);
     vh=funcMeanc(vh);

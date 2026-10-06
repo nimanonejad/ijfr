@@ -11,7 +11,7 @@ addpath('data')
 N=1; 
 LASTN=maxNumCompThreads(N);
 
-dg=0.005; %You need to run main for each dg value of [0.005,0.05,5,50,100] and save the ouput using a distinct name
+dg=0.05; %You need to run main for each dg value of [0.05,0.5,5,50,100] and save the ouput using a distinct name
 ih=1; %Forecast horizon
 ip=1; 
 dalpha=1;

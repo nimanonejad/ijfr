@@ -6,7 +6,7 @@ addpath('functions')
 addpath('data')
 
 mtstream=RandStream('mt19937ar');
-RandStream.setDefaultStream(mtstream); %USE RandStream.setGlobalStream(mtstream) if you get error.
+RandStream.setGlobalStream(mtstream);
 
 N=1; 
 LASTN=maxNumCompThreads(N);
@@ -99,5 +99,5 @@ for k=1
     vh=vh(size(vh,1)-size(meps,1)+1:end,:);
     vh=funcMeanc(vh);
     moutc=funcDynamicRotation(meps,mpof,mpdf,mcvl,vh(1:end-ih,1),vlambda,vgam,ih,dalpha);
-    eval(['save simulationl_',int2str(k),'.mat'])    
+    eval(['save simulation_',int2str(k),'.mat'])    
 end

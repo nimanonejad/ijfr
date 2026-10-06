@@ -19,7 +19,7 @@ vend=202412;    %remember to change, 202412 for 1990-2024 out-of-sample period.
 % period.
 for k=1
    
-    eval(['load wti_',int2str(k),'.mat']) 
+    eval(['load wti_prior_',int2str(k),'.mat']) 
 
     dalpha=1;
     mml=combvec([5e-1,1e-1,1e-2,1e-3,1e-4,1e-5,1e-6,1e-10],1)';
